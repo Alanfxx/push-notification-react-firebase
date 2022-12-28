@@ -39,7 +39,7 @@ function requestPermission() {
         const notificationTitle = notification?.title ?? ''
         const notificationOptions = {
           body: notification?.body ?? '',
-          icon: notification?.image ?? 'src/assets/icons/protech72.png'
+          icon: notification?.image ?? '../public/icons/protech72.png'
         }
         navigator.serviceWorker.getRegistration().then(registration => {
           registration?.showNotification(notificationTitle, notificationOptions)

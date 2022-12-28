@@ -24,7 +24,7 @@ messaging.onBackgroundMessage(({ notification }) => {
   const notificationTitle = notification?.title ?? ''
   const notificationOptions = {
     body: notification?.body ?? '',
-    icon: notification?.image ?? 'src/assets/icons/protech72.png'
+    icon: notification?.image ?? './icons/protech72.png'
   }
 
   self.registration.showNotification(notificationTitle, notificationOptions)
